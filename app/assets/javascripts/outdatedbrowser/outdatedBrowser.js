@@ -141,7 +141,7 @@ var outdatedBrowser = function(options) {
         btnClose.style.color = txtColor;
 
         //close button
-        btnClose.onmousedown = function() {
+        btnClose.onclick = function() {
             outdated.style.display = 'none';
             return false;
         };
