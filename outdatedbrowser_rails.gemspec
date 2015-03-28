@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = OutdatedbrowserRails::VERSION
   s.authors     = ["Luisa Lima"]
   s.email       = ["luisamoyalima@gmail.com"]
-  s.homepage    = "https://github.com/luisalima/outdatedbrowser_rails"
+  s.homepage    = "https://github.com/anthony-robin/outdatedbrowser_rails"
   s.summary     = "Adds outdatedbrowser assets to the rails asset pipeline."
   s.description = "A gem to automate using outdated-browser with Rails >= 3."
 

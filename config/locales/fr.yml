@@ -1,0 +1,5 @@
+fr:
+  outdatedbrowser:
+    out_of_date: 'Votre navigateur est désuet!'
+    suggest_update: 'Mettez à jour votre navigateur pour afficher correctement ce site Web.'
+    update_now: 'Mettre à jour maintenant '
