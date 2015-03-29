@@ -128,7 +128,6 @@
 
             //close button
             btnClose.addEventListener('click', function() {
-                alert('click');
                 outdated.style.display = 'none';
                 return false;
             });
