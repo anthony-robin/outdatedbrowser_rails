@@ -100,6 +100,21 @@
            };
         })();
 
+        //if browser does not supports css3 property (transform=default), if does > exit all this
+        if ( !supports(''+ cssProp +'') ) {
+            if (done && outdated.style.opacity !== '1') {
+                done = false;
+                for (var i = 1; i <= 100; i++) {
+                    setTimeout((function (x) {
+                        return function () {
+                            function_fade_in(x);
+                        };
+                    })(i), i * 8);
+                }
+            }
+        }else{
+            return;
+        };//end if
 
         //Check AJAX Options: if languagePath == '' > use no Ajax way, html is needed inside <div id="outdated">
         if( languagePath === ' ' || languagePath.length == 0 ){
@@ -142,22 +157,6 @@
                 this.style.backgroundColor = bkgColor;
             };
         }//end styles and events
-
-        //if browser does not supports css3 property (transform=default), if does > exit all this
-        if ( !supports(''+ cssProp +'') ) {
-            if (done && outdated.style.opacity !== '1') {
-                done = false;
-                for (var i = 1; i <= 100; i++) {
-                    setTimeout((function (x) {
-                        return function () {
-                            function_fade_in(x);
-                        };
-                    })(i), i * 8);
-                }
-            }
-        }else{
-            return;
-        };//end if
 
         // IF AJAX with request ERROR > insert english default
         var ajaxEnglishDefault = '<h6>Your browser is out-of-date!</h6>'
