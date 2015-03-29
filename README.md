@@ -4,14 +4,14 @@ This project bundles the excellent Burocratik's
 [Outdated Browser](https://github.com/burocratik/outdated-browser)
 detector for use with the rails 3.1+ asset pipeline.
 
-[![Gem Version](https://badge.fury.io/rb/outdatedbrowser_rails.svg)](http://badge.fury.io/rb/outdatedbrowser_rails)
+This version is a fork. The goal is to correct two majeurs problems: adding a Rails 4 compatibility and fix a problem with the close button not working
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'outdatedbrowser_rails'
+gem 'outdatedbrowser_rails', github: 'anthony-robin/outdatedbrowser_rails'
 ```
 
 ## Usage
